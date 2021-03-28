@@ -1,4 +1,5 @@
 #pragma once
+#include "GUI/IMouse.h"
 #include <string>
 
 class IGuiFacade
@@ -10,4 +11,5 @@ public:
     virtual void clear() = 0;
     virtual void draw() = 0;
     virtual void checkCloseRequest() = 0;
+    virtual IMouse* getMouse() = 0;
 };

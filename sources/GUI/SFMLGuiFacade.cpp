@@ -1,4 +1,5 @@
 #include "GUI/SFMLGuiFacade.h"
+#include "GUI/SFMLMouse.h"
 #include <SFML/Graphics.hpp>
 #include <string>
 
@@ -46,4 +47,9 @@ void SFMLGuiFacade::checkCloseRequest()
             if (event.type == sf::Event::Closed)
                 myWindow->close();
         }
+}
+
+IMouse* SFMLGuiFacade::getMouse()
+{
+    return new SFMLMouse();
 }

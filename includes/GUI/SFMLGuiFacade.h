@@ -16,6 +16,7 @@ public:
     void clear() override;
     void draw() override;
     void checkCloseRequest() override;
+    IMouse* getMouse() override;
 
 private:
     sf::RenderWindow* myWindow;
