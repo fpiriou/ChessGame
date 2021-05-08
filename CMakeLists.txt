@@ -54,6 +54,8 @@ sources/GUI/SFMLGuiFacade.cpp
 sources/GUI/SFMLMouse.cpp
 sources/GUI/PlayGameMode.cpp
 sources/core/Main.cpp
+sources/GUI/GameMode.cpp
+sources/GUI/WelcomeGameMode.cpp
 )
 
 add_executable(${PROJECT_NAME} 

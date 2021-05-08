@@ -6,7 +6,9 @@
 Main::Main()
 {
     myGui = new SFMLGuiFacade();
-    myMode = new PlayGameMode(myGui);
+    myMode = new PlayGameMode();
+
+    myMode->setGui(myGui);
 }
 
 Main::~Main()
@@ -32,4 +34,12 @@ void Main::run()
 void Main::setGUIFacade(IGuiFacade* gui)
 {
     myGui = gui;
+}
+
+void Main::setGameMode(IGameMode* newMode)
+{
+    newMode->setParent(this);
+    newMode->setGui(myGui);
+    newMode->init();
+    myMode = newMode;
 }

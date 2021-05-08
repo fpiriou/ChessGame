@@ -4,26 +4,19 @@
 #include "GUI/SFMLMouse.h"
 #include <iostream>
 
-
 PlayGameMode::PlayGameMode()
-{
-
-}
-
-PlayGameMode::PlayGameMode(IGuiFacade* gui) : myGui(gui)
 {
 
 }
 
 PlayGameMode::~PlayGameMode()
 {
-    if(myMouse)
-        delete myMouse;
+
 }
 
 void PlayGameMode::init()
 {
-    std::string windowName = "ChessGame";
+    std::string windowName = "ChessGame - PlayGame";
 
     myMouse = myGui->getMouse();
 
