@@ -41,6 +41,9 @@ includes/GUI/IGuiFacade.h
 includes/GUI/SFMLGuiFacade.h
 includes/GUI/IMouse.h
 includes/GUI/SFMLMouse.h
+includes/GUI/IGameMode.h
+includes/GUI/PlayGameMode.h
+includes/core/Main.h
 )
 
 set(SOURCES
@@ -49,6 +52,8 @@ sources/GUI/MainScreen.cpp
 sources/GUI/Button.cpp
 sources/GUI/SFMLGuiFacade.cpp
 sources/GUI/SFMLMouse.cpp
+sources/GUI/PlayGameMode.cpp
+sources/core/Main.cpp
 )
 
 add_executable(${PROJECT_NAME} 
