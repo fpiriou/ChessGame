@@ -35,7 +35,6 @@ void SFMLGuiFacade::clear()
 
 void SFMLGuiFacade::draw()
 {
-    //myWindow->draw();
     myWindow->display();
 }
 
